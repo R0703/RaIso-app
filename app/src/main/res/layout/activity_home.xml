@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellowbg"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@drawable/logoraisowrapped"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/welcomelbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Welcome to Raiso, Name!"
+        android:textSize="20dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brownnav"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

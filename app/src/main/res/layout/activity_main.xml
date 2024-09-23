@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="@color/yellowbg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logoraiso" />
+
+    <TextView
+        android:id="@+id/loginLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login to Raiso"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_gravity="left"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_edittext"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:background="@drawable/custom_edittext"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:backgroundTint="@color/darkred"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        />
+
+    <TextView
+        android:id="@+id/AgreeTF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:text="By continuing you agree to our Terms and Privacy" />
+
+
+</LinearLayout>

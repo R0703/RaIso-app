@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentTwo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/yellowbg"
+                android:padding="8dp"
+                android:layout_marginTop="16dp">
+
+                <Button
+                    android:id="@+id/btn_hot_seller"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hot Seller"
+                    android:backgroundTint="@color/brownnav"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_all_stationery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="All Stationery"
+                    android:background="@color/darkeryellow"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Raiso's Best Seller"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="16dp" />
+
+            <ImageView
+                android:id="@+id/img_best_seller"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/atomic"
+                android:scaleType="centerInside"
+                android:contentDescription="Best Seller Image" />
+
+<!--            <ViewFlipper-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:id="@+id/carousel">-->
+<!--            -->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/atomic"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/tereliye"/>-->
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:src="@drawable/map"/>-->
+<!--            </ViewFlipper>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="8dp">
+
+                <Button
+                    android:id="@+id/btn_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prev"
+                    android:background="@color/darkred"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:background="@color/darkred"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stationary Best Sellers"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/img_stationary_best_seller"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/uniball"
+                android:scaleType="centerInside"
+                android:background="@color/darkgreen"
+                android:contentDescription="Stationary Best Seller Image" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgreen"
+                android:paddingTop="8dp"
+                android:text="Mitsubishi UniBall One-P\nPrice: 55,000\nAvailable: 67"
+                android:textAlignment="center"
+                android:textColor="@color/yellowbg" />
+
+            <ImageView
+                android:id="@+id/img_stationary_best_seller2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/midori"
+                android:scaleType="centerInside"
+                android:background="@color/darkgreen"
+                android:contentDescription="Stationary Best Seller Image2"
+                android:paddingTop="18dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Midori MD Journal Notebook\nPrice: 120,000\nAvailable: 34"
+                android:textAlignment="center"
+                android:textColor="@color/yellowbg"
+                android:background="@color/darkgreen"
+                android:paddingTop="8dp" />
+            <ImageView
+                android:id="@+id/img_stationary_best_seller3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/kurutoga"
+                android:scaleType="centerInside"
+                android:background="@color/darkgreen"
+                android:contentDescription="Stationary Best Seller Image2"
+                android:paddingTop="18dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="UNI Kuru Toga Mechanical\nPrice: 45,000\nAvailable: 85"
+                android:textAlignment="center"
+                android:textColor="@color/yellowbg"
+                android:background="@color/darkgreen"
+                android:paddingTop="8dp" />
+            <ImageView
+                android:id="@+id/img_stationary_best_seller4"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/sakuraeraser"
+                android:scaleType="centerInside"
+                android:background="@color/darkgreen"
+                android:contentDescription="Stationary Best Seller Image2"
+                android:paddingTop="18dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Sakura Eraser\nPrice: 13,000\nAvailable: 124"
+                android:textAlignment="center"
+                android:textColor="@color/yellowbg"
+                android:background="@color/darkgreen"
+                android:paddingTop="8dp" />
+            <ImageView
+                android:id="@+id/img_stationary_best_seller5"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/tombowtipx"
+                android:scaleType="centerInside"
+                android:background="@color/darkgreen"
+                android:contentDescription="Stationary Best Seller Image2"
+                android:paddingTop="18dp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Tombow Mono Correction\nPrice: 30,000\nAvailable: 56"
+                android:textAlignment="center"
+                android:textColor="@color/yellowbg"
+                android:background="@color/darkgreen"
+                android:paddingTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

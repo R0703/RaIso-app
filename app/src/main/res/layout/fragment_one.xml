@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentOne">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Search..."
+                android:inputType="text"
+                android:padding="8dp" />
+
+            <!--        <ImageButton-->
+            <!--            android:id="@+id/searchButton"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_below="@id/welcomeTextView"-->
+            <!--            android:layout_alignParentEnd="true"-->
+            <!--            android:layout_marginTop="21dp"-->
+            <!--            android:layout_marginEnd="30dp"-->
+            <!--            android:background="?attr/selectableItemBackground"-->
+            <!--            android:src="@android:drawable/ic_menu_search" />-->
+
+            <RelativeLayout
+                android:id="@+id/saleBannerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_below="@id/searchEditText"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/homebanner" />
+
+            <TextView
+                android:id="@+id/todaysDiscountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saleBannerLayout"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Today's Discount"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/discimg1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/todaysDiscountTV"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/discount1" />
+
+            <ImageView
+                android:id="@+id/discimg2"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/todaysDiscountTV"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/discount2" />
+
+            <ImageView
+                android:id="@+id/discimg3"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_below="@id/todaysDiscountTV"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/discount2" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
